@@ -1,0 +1,48 @@
+What are this tags for?
+
+- <br>
+    Inserts a single break line
+- <hr>
+    Inserts a thematic break (a horizontal line)
+- <ul>
+    Defines an unordered bulleted list
+- <ol>
+    Defines an ordered list. It can be numerical or alphabetical
+- <li>
+    Defines an item of a list
+- <strong>
+    Phrase tag that defines an important text
+- <b>
+    Specifies bold text
+- <em>
+    Renders as emphasized text
+- <i>
+    Defines a part of a text in italics
+- <u>
+    Underlines a part of a text
+- <h1>
+    Defines the most important heading
+- <h6>
+    Defines the least important heading
+- <tr>
+    Defines a row in a table
+- <th>
+    Defines a header cell in a table
+- <td>
+    Defines a standard cell in a table
+- <sub>
+    Defines subscript text.
+    Subscript text appears half a character below
+    the normal line and in a smaller font
+- <sup>
+    Defines superscript text.
+    Superscript text appears half a character above
+    the normal line and in a smaller font
+- <legend>
+    Defines the title for the <fieldset> element
+
+
+- What is an empty tag? Give an example
+    An empty tag is an element with no content.
+    For example, <br> is an empty tag.
+    HTML5 does not require empty tags to be closed.
