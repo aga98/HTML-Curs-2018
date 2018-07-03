@@ -1,0 +1,15 @@
+In a website we can set its charset to define the character encoding of the letters
+we will use (for example, for chinese the charset is "utf-8",
+that is pretty universal, but for catalan it is "ISO-8859-1").
+
+Nevertheless, sometimes we will find strange numbers
+instead of letters in text or URLs. It is called URL Encoding.
+Search info about URL Encoding/Decoding and write
+the encoded version of this characters:
+
+- space --> +
+- á --> %C3%A1
+- è --> %C3%A8
+- ö --> %C3%B6
+- < --> %3C
+- ) --> %29
