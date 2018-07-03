@@ -6,8 +6,8 @@ a) To get the <p>
     <p> </p>
 </div>
 
-    p {
-    }
+Solution:   p {
+            }
 
 b) To get the first <p>
 
@@ -16,8 +16,8 @@ b) To get the first <p>
     <p> </p>
 </div>
 
-    p.first {
-    }
+Solution:   p.first {
+            }
 
 c) To get the middle <li>
 
@@ -27,8 +27,8 @@ c) To get the middle <li>
     <li>
 </ul>
 
-    li:nth-of-type(2) {
-    }
+Solution:   li:nth-of-type(2) {
+            }
 
 d) To get all <p> inside <div>
 
@@ -40,8 +40,8 @@ d) To get all <p> inside <div>
 </div>
 <p>
 
-    div p {
-    }
+Solution:   div p {
+            }
 
 e) To get the deepest <p>
 
