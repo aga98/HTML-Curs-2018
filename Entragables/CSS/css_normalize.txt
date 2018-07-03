@@ -1,0 +1,6 @@
+Normalize is a CSS file whose main objective is to maintain 
+similar styles in browsers,  since each one adds its own styles by default, 
+as different paddings, margins, font-sizes, etc. 
+With Normalize CSS styles are regularized, so our website looks the same 
+regardless of the browser where it is displayed. 
+It is also ready to fully adapt to HTML5.
