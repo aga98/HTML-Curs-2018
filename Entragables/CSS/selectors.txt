@@ -1,0 +1,66 @@
+Which selector do we need?
+
+a) To get the <p>
+
+<div>
+    <p> </p>
+</div>
+
+    p {
+    }
+
+b) To get the first <p>
+
+<div class="first">
+    <p class="first"> </p>
+    <p> </p>
+</div>
+
+    p.first {
+    }
+
+c) To get the middle <li>
+
+<ul>
+    <li>
+    <li>
+    <li>
+</ul>
+
+    li:nth-of-type(2) {
+    }
+
+d) To get all <p> inside <div>
+
+<div>
+    <p> </p>
+    <form>
+        <p> </p>
+    </form>
+</div>
+<p>
+
+    div p {
+    }
+
+e) To get the deepest <p>
+
+<div class="second">
+    <p id="first" class="second third">
+        <p class="second third">
+            <p class="third"> </p>
+        </p>
+    </p>
+<div>
+
+
+
+Bonus: is anything wrong here?
+
+<p id="first text">
+    <p id="second text">
+        <p id="third text"></p>
+    </p>
+</p>
+
+Yes, the id cannot be repeated. We could use "class" instead.
