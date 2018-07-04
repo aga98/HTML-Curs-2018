@@ -1,24 +1,55 @@
-#chile{
-	background: #fff
-	&:before
-		background: #0039A6
-		width: 33%
-		height: 50%
-	&:after
-		background: #D52B1E
-		width: 100%
-		height: 50%
-		top: 50%
+#ch{
+	width: 999px;
+	height: 333px;
+	display: flex;
+	flex-direction:row;
+	margin: auto;
+}
+#col{
+	width: 999px;
+	height: 667px;
+	display: flex;
+	flex-direction:column;
+	margin: auto;
 }
 
-#blue{
-	float: left;
-	width: 347px;
-	height: 346px;
-	background: rgb(0,57,166);
+.rd{
+	width: 999px;
+	height: 267px;
+	display: flex;
+	flex-direction:row;
+	margin: auto;
 }
 
-#red{
-	grid-row: 1/4;
-	background: rgb(213,43,30);
+#blue1{flex-grow: 1;}
+#white2{flex-grow: 2;}
+#red3{
+	flex-grow: 1;
+	width: 999px;
+	height: 333px;
+	margin: auto;
 }
+
+#yellow4{flex-grow: 2;}
+#blue5{flex-grow: 1;}
+#red6{flex-grow: 1;}
+
+.blue7{flex-grow: 3;}
+.white8{flex-grow: 1;}
+.red9{flex-grow: 3;}
+#white9{
+	flex-grow: 7;
+	height: 83px;
+}
+
+h3{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+
+
+
+
+
+
