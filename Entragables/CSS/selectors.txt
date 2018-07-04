@@ -53,7 +53,7 @@ e) To get the deepest <p>
     </p>
 <div>
 
-Solution:   #first p p {
+Solution:   p:last-child {
             }
 
 Bonus: is anything wrong here?
