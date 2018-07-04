@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Table Grid</title>
+	<style type="text/css">
+		.grid-container {
+			display: grid;
+			grid-template-columns: auto auto auto auto auto;
+			padding: 1px;
+			background-color: rgb(0,0,0);
+		}
+		.grid-container div{
+			background-color: rgb(255,255,255);
+			margin: 1px;
+			font-size: 30px;
+			text-align: center;
+		}
+		#cs{
+  			grid-row: 2/5;
+  			padding:30px 0 30px 0;
+		}
+		#name{
+			grid-column: 2/4;
+		}
+		#ran{
+			grid-column: 1/6;
+		}
+		#a1{
+			grid-row: 8/10;
+			padding:20px 0 20px 0;
+		}
+		#b1{
+			grid-column: 2/3;
+			grid-row: 7/9;
+			padding:20px 0 20px 0;
+		}
+		#c1{
+			grid-column: 3/5;
+		}
+		#d1{
+			grid-column: 4/6;
+		}
+		#b2{
+			grid-column: 2/5;
+			grid-row: 9/11;
+			padding:20px 0 20px 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="grid-container">
+		<div><b>Degree</b></div>
+		<div id="name"><b>Student</b></div>
+		<div><b>Age</b></div>
+		<div><b>Course</b></div>
+		<div id="cs">Computer Science</div>
+		<div>Pepito</div>
+		<div>G</div>
+		<div>22</div>
+		<div>1r</div>
+		<div>Jack</div>
+		<div>Meier</div>
+		<div>94</div>
+		<div>????</div>
+		<div>John</div>
+		<div>Brown</div>
+		<div>18</div>
+		<div>4rt</div>
+		<div>Electrical Engineering</div>
+		<div>Aina</div>
+		<div>Soler</div>
+		<div>23</div>
+		<div>4rt</div>
+		<div id="ran">Random Item</div>
+		<div>A</div>
+		<div id="b1">B</div>
+		<div id="c1">C</div>
+		<div>E</div>
+		<div id="a1">A</div>
+		<div>C</div>
+		<div id="d1">D</div>
+		<div>C</div>
+		<div id="b2">B</div>
+		<div>C</div>
+		<div>A</div>
+	</div>
+</body>
+</html>
