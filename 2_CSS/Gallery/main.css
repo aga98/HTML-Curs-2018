@@ -21,6 +21,7 @@ html,body{
 #container > div > img{
 	display: block;
 	transform: translateZ(0);
+	transition: transform 0.5s;
 }
 #container > div:hover{
 	z-index: 1;
