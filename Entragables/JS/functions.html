@@ -6,20 +6,31 @@
 </head>
 <body>
 	<p id="sq"></p>
+	<p id="par"></p>
+	<p id="fac"></p>
+	<p id="ran"></p>
+	<p id="big"></p>
+
 	<script>
-		var x = square(4);
-		document.getElementById("sq").innerHTML = x;
+		document.getElementById("sq").innerHTML = "The square of 4 is " + square(4) + ".";
 		function square(a) {
 		    return a * a;
 		}
-		var n = parity(4);
-		document.getElementById("sq").innerHTML = n;
+		document.getElementById("par").innerHTML = "The parity of 4 is " + parity(4) + ".";
 		function parity(a) {
-		    if (a%2 == 0){ 
-		    	return "even"};
-		    }
+		    if (a%2 == 0) return "even";
 		    else return "odd";
+		}
+		document.getElementById("ran").innerHTML = rand() + " is a random number.";
+		function rand(){
+			return Math.floor(Math.random()*100 +1);
+		}
+		document.getElementById("big").innerHTML = maxx(5,64,-2,9) + " is the biggest among 5,64,-2,9.";
+		function maxx(a,b,c,d){
+			return Math.max(a,b,c,d);
+		}
+		var m = ["January", "February", "March", "April", "May","June", "July", "August", "September", "October", "November", "December"];
+		console.log(m);
 	</script>
-		<p id="par"></p>
 </body>
 </html>
