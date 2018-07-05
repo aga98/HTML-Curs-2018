@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Functions</title>
+</head>
+<body>
+	<p id="sq"></p>
+	<script>
+		var x = square(4);
+		document.getElementById("sq").innerHTML = x;
+		function square(a) {
+		    return a * a;
+		}
+		var n = parity(4);
+		document.getElementById("sq").innerHTML = n;
+		function parity(a) {
+		    if (a%2 == 0){ 
+		    	return "even"};
+		    }
+		    else return "odd";
+	</script>
+		<p id="par"></p>
+</body>
+</html>

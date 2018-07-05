@@ -108,7 +108,7 @@ html,body{
 	height: 17px;
 	background: rgb(52,73,94);
 	z-index: 5;
-	margin: 153px 38px;
+	margin: 34px -231px;
 	animation-name: movl;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
@@ -121,7 +121,7 @@ html,body{
 	height: 17px;
 	background: rgb(52,73,94);
 	z-index: 5;
-	margin: 153px 120px;
+	margin: 34px -245px;
 	animation-name: movr;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
