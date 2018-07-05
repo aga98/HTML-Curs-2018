@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome</title>
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<script>
+		function func(){
+			var name = document.getElementById('nam').value;
+			document.getElementById('wel').innerHTML= "Welcome back " + name;
+		}
+	</script>
+</head>
+<body>
+	<div id="cont">
+		<p id="in"> >>  </p>
+		<input type="text" id="nam" name="in" placeholder="Your name here">
+		<input type="submit" id="go" name="sub" onclick= "func()" value ="GO">
+	</div>
+	<div>
+		<p id="wel"></p>
+	</div>
+
+</body>
+</html>
