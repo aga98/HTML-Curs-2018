@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clock</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
+	<script>
+		var on = false;
+		window.onload = function(){
+			document.getElementById("start").onclick = function() {
+				if(on == false) start();
+			}
+			document.getElementById("reset").onclick = function() {
+				if(on == true) reset();			 
+			}
+		}	
+
+		function start(){
+			timerId = setInterval(sumsec,1000);
+			on = true;
+		}
+		function reset(){
+			document.getElementById('sec').innerHTML = "00";
+			document.getElementById('min').innerHTML = "00";
+			on = false;
+			clearInterval(timerId);
+		}
+		function sumsec(){
+			var s = document.getElementById('sec').innerHTML;
+			var num = parseInt(s); ++num;
+			if(num < 10) document.getElementById('sec').innerHTML = "0"+num;
+			else if(num < 60) document.getElementById('sec').innerHTML = num;
+			else{
+				document.getElementById('sec').innerHTML = "00";
+				summin();
+			}
+		}
+		function summin(){
+			var s = document.getElementById('min').innerHTML;
+			var num = parseInt(s); ++num;
+			if(num < 10) document.getElementById('min').innerHTML = "0"+num;
+			else document.getElementById('min').innerHTML = num;
+		}
+	</script>
+</head>
+<body>
+	<div id="outter">
+		<div id="container">
+			<div id="min">00</div>
+			<div id="points">:</div>
+			<div id="sec">00</div>
+		</div>
+		<div id="container2">
+			<div id="start" class="but">START</div>
+			<div id="reset" class="but">RESET</div>
+		</div>
+	</div>
+
+</body>
+</html>

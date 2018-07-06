@@ -1,0 +1,43 @@
+body, html{
+	width: 100%
+	margin: 0;
+}
+
+
+#outter{
+	margin: 25% auto;
+	width: 60%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+#container{
+	border: 5px solid black;
+	border-radius: 10px 10px;
+	justify-content: center;
+	display: flex;
+}
+#container2{
+	border-radius: 10px 10px;
+	justify-content: center;
+	display: inline-flex;
+}
+
+div div{
+	text-align: center;
+	font-size: 110px;
+	font-family: 'Orbitron', sans-serif;
+}
+
+.but{
+	text-align: center;
+	font-size: 70px;
+	font-family: 'Orbitron', sans-serif;
+	margin: 30px;
+}
+
+.but:hover{
+	color:#B8B8B8;
+	cursor: pointer;
+}
