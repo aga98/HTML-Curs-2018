@@ -1,0 +1,152 @@
+html,body{
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+#face{
+	background: rgb(189,195,199);
+	width: 180px;
+	height: 350px;
+	border-radius: 120px 120px 20px 20px;
+}
+
+#mouth{
+	position: absolute;
+	display: flex;
+	width: 140px;
+	height: 60px;
+	margin: 250px 13px;
+	background-size: 25px 21px;
+	background-image: linear-gradient(to right, rgb(52,73,94) 4px, transparent 1px), linear-gradient(to bottom,
+		rgb(52,73,94) 4px, rgb(253,227,167) 1px);
+	background-position: -4px -3px;
+	border:7px solid rgb(52,73,94);
+	border-radius: 80px;
+	flex-wrap: wrap;
+	z-index: 1;
+}
+
+#eyes{
+	position: absolute;
+	align-content: space-around;
+	width: 220px;
+	height: 70px;
+	margin: 120px -30px;
+	background: transparent;
+	border:8px solid rgb(52,73,94);
+	border-radius: 80px;
+	z-index: 4;
+}
+#eyes2{
+	position: absolute;
+	width: 220px;
+	height: 70px;
+	margin: 120px -30px;
+	background: black;
+	border:8px solid rgb(52,73,94);
+	border-radius: 80px;
+	z-index: 2;
+}
+
+#eyeL{
+	position: absolute;
+	width: 90px;
+	height: 86px;
+	background:rgb(253,227,167);
+	border-radius: 100%;
+	margin: 120px -8px;
+	z-index: 3;
+}
+
+#eyeR{
+	position: absolute;
+	width: 90px;
+	height: 86px;
+	background:rgb(253,227,167);
+	border-radius: 100%;
+	margin: 120px 94px;
+	z-index: 3;
+	overflow: hidden;
+}
+
+#top{
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	background: rgb(189,195,199);
+	border-radius: 200px 200px 0px 0px;
+	margin: -15px 46px;
+}
+
+#antenna{
+	position: absolute;
+	width: 15px;
+	height: 120px;
+	background: rgb(189,195,199);
+	margin: -133px 85px;
+}
+
+#ball{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background: rgb(189,195,199);
+	border-radius: 100%;
+	margin: -155px 80px;
+}
+
+
+#iris1{
+	position: absolute;
+	width: 17px;
+	height: 17px;
+	background: rgb(52,73,94);
+	z-index: 5;
+	margin: 34px -231px;
+	animation-name: movl;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+
+#iris2{
+	position: absolute;
+	width: 17px;
+	height: 17px;
+	background: rgb(52,73,94);
+	z-index: 5;
+	margin: 34px -245px;
+	animation-name: movr;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes movl{
+	0%{
+		left: 280px;
+	}
+	50%{
+		left: 250px;
+	}
+	100%{
+		left: 280px;
+	}
+}
+
+@keyframes movr{
+	0%{
+		left: 265px;
+	}
+	50%{
+		left: 295px;
+	}
+	100%{
+		left: 265px;
+	}
+}
