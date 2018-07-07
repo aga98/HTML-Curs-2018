@@ -1,0 +1,21 @@
+html,body{
+	margin: 0;
+	height: 100%;
+}
+
+#header{
+	height: 60px;
+	background-color: #F2F2F2;
+}
+
+#container{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+}
+
+#container img{
+	width: 50%;
+	height: auto;
+}

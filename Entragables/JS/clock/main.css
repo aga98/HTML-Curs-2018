@@ -1,11 +1,11 @@
-body, html{
-	width: 100%
-	margin: 0;
-}
+/*body, html{
+	width: 100%;
+	height: 80vh;
+}*/
 
 
 #outter{
-	margin: 25% auto;
+	margin: 20% auto;
 	width: 60%;
 	justify-content: center;
 	display: flex;
@@ -19,6 +19,7 @@ body, html{
 	display: flex;
 }
 #container2{
+	position: relative;
 	border-radius: 10px 10px;
 	justify-content: center;
 	display: inline-flex;
