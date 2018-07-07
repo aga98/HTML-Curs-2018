@@ -4,13 +4,25 @@
 	<meta charset="UTF-8">
 	<title>Discover My World</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 </head>
 <body>
-	<div id="header"></div>
-	<div>
+	<div id="header">
+		<span id="title">Discover My World</span>
+		<div id="container_top">
+			<span id="dark">DARK MODE</span>
+			<label class="switch">
+		  	<input type="checkbox">
+		 	<span class="slider round"></span>
+		</label>
+		</div>
+		
+	</div>
+	<div id="vid">
 		<video loop autoplay>
+			<source src="media/canyon.webm" type="video/webm"> 
 			<source src="media/canyon.mp4" type="video/mp4"> 
-			<source src="media/canyon.ogg" type="video/ogg"> 
 		</video>
 	</div>
 </body>
