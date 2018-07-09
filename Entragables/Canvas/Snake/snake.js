@@ -35,10 +35,4 @@ function draw(x,y,size,color){
 
 window.onload = function(){
 	intialize();
-	window.onkeydown = function key(new_event) ;
-}
-
-function key(pressed){
-	var x = pressed.keyCode;
-	if(x == )
 }
