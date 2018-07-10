@@ -15,12 +15,17 @@ var xx;
 var yy;
 
 window.onload = function(){
-	intialize();
-	window.onkeydown = function(){key(event)};
-	
+	document.getElementById("play").onclick = intialize;
+	window.onkeydown = function(){key(event)};	
 }
 
 function intialize(){
+	document.getElementById("play").disabled = true;
+	snakePos = [{x:0, y:0}];
+	fruitPos = {x:0, y:0};
+	parts = 1;
+	dir = {u:0,d:0,l:0,r:1};
+	newpart = false;
 	ctx = document.getElementById('container').getContext("2d");
 	updateFruit();
 	updateSnake();
@@ -75,17 +80,17 @@ function draw(x,y,size,color){
 
 
 function key(event){
-	var x = event.keyCode;
-	if(x == 37) { //left
+	var key = event.which || event.keyCode;
+	if(key == 37) { //left
 		dir = {u:0,d:0,l:1,r:0};
 	}
-	else if(x == 38) { //up
+	else if(key == 38) { //up
 		dir = {u:1,d:0,l:0,r:0};
 	}
-	else if(x == 39) { //right
+	else if(key == 39) { //right
 		dir = {u:0,d:0,l:0,r:1};
 	}
-	else if(x == 40) { //down
+	else if(key == 40) { //down
 		dir = {u:0,d:1,l:0,r:0};
 	}
 }
@@ -99,15 +104,22 @@ function update() {
 		yy = snakePos[parts-2].y;
 		updateFruit();
 	}
-	else if(snakePos[0].x > WIDTH || snakePos[0].x < 0 || snakePos[0].y > HEIGHT || snakePos[0].y < 0){
+	else if(snakePos[0].x > WIDTH || snakePos[0].x < 0 || snakePos[0].y > HEIGHT || snakePos[0].y < 0 || crashes()){
 		clearInterval(iid);		
+		document.getElementById("play").disabled = false;
 		alert("GAME OVER");
-	}
-	else if(){
-
 	}
 	else {
 		draw(fruitPos.x,fruitPos.y,size,"red");
 		updateSnake();
 	}
+}
+
+function crashes(){
+	var posx = snakePos[0].x;
+	var posy = snakePos[0].y;
+	for(i = 1; i<snakePos.length; ++i){
+		if(posx == snakePos[i].x && posy == snakePos[i].y) return true;
+	}
+	return false;
 }
