@@ -21,6 +21,7 @@ window.onload = function(){
 
 function intialize(){
 	document.getElementById("play").disabled = true;
+	document.getElementById("gover").style.zIndex = -1;
 	snakePos = [{x:0, y:0}];
 	fruitPos = {x:0, y:0};
 	parts = 1;
@@ -105,9 +106,10 @@ function update() {
 		updateFruit();
 	}
 	else if(snakePos[0].x > WIDTH || snakePos[0].x < 0 || snakePos[0].y > HEIGHT || snakePos[0].y < 0 || crashes()){
+		document.getElementById("gover").style.zIndex = 1;
 		clearInterval(iid);		
 		document.getElementById("play").disabled = false;
-		alert("GAME OVER");
+		setTimeout(function(){ alert("GAME OVER"); }, 500);
 	}
 	else {
 		draw(fruitPos.x,fruitPos.y,size,"red");

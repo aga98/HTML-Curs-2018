@@ -24,10 +24,20 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
+		img{
+			width: 500px;
+			height: 500px;
+			position: absolute;		
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: -1;
+		}
 	</style>
 </head>
 <body>
 	<canvas id="container" width="500" height="500"></canvas>
+	<img id="gover" src="gameover.jpg">
 	<button id="play">PLAY</button>
 </body>
 </html>
