@@ -45,6 +45,35 @@ html,body{
 	overflow:hidden;
 }
 
+
+#intro{
+	position: absolute;
+	right: 3%;
+	top: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	width: 430px;
+	z-index: 1;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	color: white;
+}
+
+@media only screen and (max-width: 1650px) {
+    #intro{
+		left: 10%;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	#title{
+		font-size: 20px;
+		padding-left: 0;
+	}
+}
+
 video{
 	object-fit: cover;
 	display: flex;
@@ -122,37 +151,6 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-/*#intro{
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
-	width: 30%;
-	left: 65%;
-	top: 50%;
-	z-index: 1;
-	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
-	color: white;
-}*/
-
-#intro{
-	position: relative;
-	right: -70%;
-	top: -70%;
-	min-width: 15%;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
-	width: 25%;
-	z-index: 1;
-	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
-	color: white;
 }
 
 #start{
