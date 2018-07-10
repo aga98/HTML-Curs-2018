@@ -37,29 +37,22 @@ function updateFruit(){
 function updateSnake(){ 
 	if(newpart == true){
 		newpart = false;
-		for(i = 1; i < parts-1; i++) {
+		for(i = parts-2; i > 0; i--) {
 			newx = snakePos[i-1].x;
 			newy = snakePos[i-1].y;
 			draw(newx,newy,size,"black");
 			snakePos[i].x = newx;
 			snakePos[i].y = newy;
-			if(i == parts-1){
-				newpart = false;
-				snakePos.push({x:xx, y:yy});
-			}	
-		}		
+		}
+		snakePos.push({x:xx, y:yy});		
 	}
 	else{
-		for(i = 1; i < parts; i++) {
+		for(i = parts-1; i > 0; i--) {
 			newx = snakePos[i-1].x;
 			newy = snakePos[i-1].y;
 			draw(newx,newy,size,"black");
 			snakePos[i].x = newx;
-			snakePos[i].y = newy;
-			if(newpart == true && i == parts-1){
-				newpart = false;
-				snakePos.push({x:xx, y:yy});
-			}			
+			snakePos[i].y = newy;			
 		}
 	}
 	newx = snakePos[0].x;
@@ -99,12 +92,19 @@ function key(event){
 
 function update() {
 	ctx.clearRect(0,0,WIDTH,HEIGHT);
-	if(snakePos[0].x == fruitPos.x && snakePos[0].y == fruitPos.y) {
+	if(snakePos[0].x == fruitPos.x && snakePos[0].y == fruitPos.y){
 		++parts;
 		newpart = true;
 		xx = snakePos[parts-2].x;
 		yy = snakePos[parts-2].y;
 		updateFruit();
+	}
+	else if(snakePos[0].x > WIDTH || snakePos[0].x < 0 || snakePos[0].y > HEIGHT || snakePos[0].y < 0){
+		clearInterval(iid);		
+		alert("GAME OVER");
+	}
+	else if(){
+
 	}
 	else {
 		draw(fruitPos.x,fruitPos.y,size,"red");
