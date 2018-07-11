@@ -263,7 +263,7 @@ span a{
 }
 
 .photo-container img:hover{
-	filter: brightness(85%);
+	filter: brightness(80%);
 }
 
 .photo-container div{
