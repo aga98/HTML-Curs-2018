@@ -251,13 +251,13 @@ span a{
 }
 
 .photo-container img{
+	width: 100%;
 	max-width: 100%;
 	border-radius: 10px 10px 0 0;
 }
 
 .photo-container div{
 	width: 100%;
-	height: auto;
 	text-align: center;
     background-color: #474747;
     font-family: 'Raleway', sans-serif;
