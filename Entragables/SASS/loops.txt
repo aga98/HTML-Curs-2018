@@ -1,0 +1,50 @@
+You can make loops and conditionals in Sass. Which situations require this functionalities? 
+Write some code as example.
+
+
+The @if Directive
+The first directive we’ll talk about is @if, which takes an expression, 
+evaluates it as true or false, and based on the evaluation runs or doesn’t run some code. 
+It allows you to create different branches in your code that run under different conditions.
+
+Here’s an example where I change the color of an h1 based on the color of the body background.
+
+$body: blue;
+h1 {  
+  @if $body == red {  
+	color: cyan;  
+  } @else if $body == green {  
+	color: magenta;  
+  } @else if $body == blue {  
+	color: yellow;  
+  } @else {  
+	color: black;  
+  }
+}
+
+
+The @for Directive
+The @for directive sets a counter and loops through 
+a block of code as long as the counter falls within the specified bounds you set.
+
+
+
+
+@for <$variable> from <start> through <end> { 
+
+}
+
+The first time through the @for loop, the value of $variable will be <start>. 
+The next time through the loop the value will be <start> + 1. 
+The time after it will be <start> + 2 and so on until such a time when the 
+value of $variable equals <end> in which case your code will run one last time 
+and then move on to whatever code follows the loop.
+
+
+The second option is:
+@for $var from <start> to <end> {
+
+} 
+which starts at <start> and loops through each iteration "to" <end> and stops. 
+Once the directive hits the <end> it stops the looping process and does 
+not evaluate the loop that one last time.
