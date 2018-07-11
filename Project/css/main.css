@@ -235,3 +235,29 @@ span a{
 	width: 100%;
 	margin: 2%;
 }
+
+.country-container{
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	flex-wrap: wrap;
+}
+
+.photo-container{
+	flex: 25%;
+	padding: 5px;
+	margin: 5px;
+	max-width: 33%;
+}
+
+.photo-container img{
+	width: 100%;
+}
+
+.photo-container div{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
