@@ -160,7 +160,9 @@ input:checked + .slider:before {
 	width: 50%;
 	background-color: #2196F3;
 	border-radius: 20px;
+	color: white;
 	text-align: center;
+	text-decoration: none;
 	font-size: 20px;
 	padding: 5px;
 	align-self: center
@@ -188,14 +190,14 @@ span a{
 
 
 #bar {
+	position: sticky;
+	position: -webkit-sticky; /* Safari */
     list-style-type: none;
     margin: 0;
     padding: 0;
     height: 5vh;
     overflow: hidden;
-    position: -webkit-sticky; /* Safari */
     background-color: #474747;
-    position: sticky;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -240,7 +242,7 @@ span a{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	align-content: space-around;
 	justify-content: center;	
 }
 
@@ -250,10 +252,18 @@ span a{
 	overflow: hidden;
 }
 
+.photo-container:hover{
+	cursor: pointer;
+}
+
 .photo-container img{
 	width: 100%;
 	max-width: 100%;
 	border-radius: 10px 10px 0 0;
+}
+
+.photo-container img:hover{
+	filter: brightness(85%);
 }
 
 .photo-container div{
