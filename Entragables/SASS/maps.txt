@@ -1,0 +1,44 @@
+Search about Sass maps files (map.scss) and how to make them work in your website. 
+Do you find them useful?
+
+
+The maps will be under a variable name and inside parentheses (), 
+associated key / value "keys and values", where we will use the key 
+to search and access this associated value and to return the specific 
+value of some specified key we use map-get.
+
+Now, something that must be taken into account is that Sass will allow us 
+to manage these maps with their established functions. 
+In this case we will use the @each directive to manage the $ colors 
+map and assign the HTML elements to their respective colors.
+
+
+$colores: (
+   facebook: #3b5998,
+   googleplus: #dd4b39,
+   instagram: #517fa4,
+   linkedin: #007bb6,
+   pinterest: #cb2027,
+   twitter: #00aced,
+   youtube: #b00,
+   soundcloud: #f60,
+);
+
+@each $colores, $bgcolor in $colores {
+   .social--#{$colores} {
+       background: $bgcolor;
+   }
+}
+
+
+<ol>
+   <li class="social social--facebook"> Facebook </li>
+   <li class="social social--googleplus"> Google+ </li>
+   <li class="social social--instagram"> Instagram </li>
+   <li class="social social--linkedin"> LinkedIn </li>
+   <li class="social social--pinterest"> Pinterest </li>
+   <li class="social social--twitter"> Twitter </li>
+   <li class="social social--youtube"> YouTube </li>
+   <li class="social social--soundcloud"> Soundcloud </li>
+</ol>
+
