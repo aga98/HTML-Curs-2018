@@ -1,0 +1,26 @@
+What is the use of the @content directive in mixins? Give an example.
+
+
+Through the @content directive you are also able to pass a block of styles not defined in the mixin. These additional styles will appear within the mixin where you place @content:
+
+@mixin cont {
+  background-color: black;
+  color: white;
+  @content;
+}
+
+Now, when you call this mixin, you will be able to add any additional properties you’d like to use:
+
+div {
+  @include cont {
+    font-size: 12px;
+    font-style: italic;
+  }
+}
+
+div {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  font-style: italic;
+}
