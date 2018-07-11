@@ -1,0 +1,10 @@
+Search about !default. Write an example of a useful use of !default on a variable.
+
+
+You can assign to variables if they aren’t already assigned by adding the !default flag to the end of the value. This means that if the variable has already been assigned to, it won’t be re-assigned, but if it doesn’t have a value yet, it will be given one.
+
+Ex:
+$color: #333333;
+$color: #000000 !default;
+
+If $color: #333333; wouldn't be assigned, the variable color would be set to #000000. As it is assigned, the color won¡t change to #000000
