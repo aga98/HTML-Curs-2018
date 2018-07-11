@@ -80,11 +80,12 @@ video{
 	flex: flex-end;
 	object-position: center;
 	overflow: hidden;
-	/*position: absolute;
-  	top: 50%; 
-  	left: 50%;
-  	transform: translateX(-50%) translateY(-50%);*/
 }
+
+#niagara{
+	display: none;
+}
+
 
 .social{
 	width: 30px;
@@ -94,6 +95,7 @@ video{
 
 .social:hover{
 	cursor: pointer;
+	transform: scale(0.95);
 }
 
 .switch {

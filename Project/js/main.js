@@ -1,25 +1,19 @@
 var iid;
-var vid = "chute";
-var video;
-var source;
+var vid = "canyon";
 
-window.onload = function(){
-	video = document.getElementById('background');
-	source = document.createElement('source');
+$(window).("load", function(){
 	iid = setInterval(switchVideo,1000);
-}
+});
 
 function switchVideo(){
-	if(vid == "chute"){
+	if(vid == "canyon"){
 		vid = "niagara";
-			source.setAttribute('src', '../media/niagara.mp4');
-			video.appendChild(source);
-			video.play();
+			$("#canyon").css(display,"none");
+			$("#niagara").css(display,"initial");
 	}
 	else{
-		vid = "chute";
-			source.setAttribute('src', '../media/canyon.mp4');
-			video.appendChild(source);
-			video.play();
+		vid = "canyon";
+			$("#niagara").css(display,"none");
+			$("#canyon").css(display,"initial");
 	}
 }
