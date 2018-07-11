@@ -238,26 +238,31 @@ span a{
 
 .country-container{
 	width: 100%;
-	margin: 0 auto;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;	
-	flex-wrap: wrap;
 }
 
 .photo-container{
-	flex: 25%;
-	padding: 5px;
-	margin: 5px;
-	max-width: 33%;
+	width: 400px;
+	margin: 10px;
 }
 
 .photo-container img{
-	width: 100%;
+	max-width: 100%;
+	border-radius: 10px 10px 0 0;
 }
 
 .photo-container div{
 	width: 100%;
-	margin: 0 auto;
+	height: auto;
 	text-align: center;
+    background-color: #474747;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 36px;
+    color: white;
+    border-radius: 0 0 5px 5px;
 }
