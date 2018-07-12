@@ -1,0 +1,67 @@
+body{
+	background-color: black;
+}
+.col-md-1{
+	background-color: black;
+	height: 250px;
+}
+.col-md-2{
+	background-color: white;
+	height: 250px;
+}
+.col-md-9{
+	background-color: red;
+	height: 250px;
+}
+.col-md-12{
+	background-color: black;
+	height: 15px;
+}
+.secondblack{
+	background-color: black;
+	height: 15px;
+}
+.secondred{
+	height: 15px;
+	background-color: red;
+}
+.thirdwhite{
+	height: 370px;
+	background-color: white;
+}
+.thirdblack{
+	height: 370px;
+	background-color: black;
+}
+.thirdred{
+	height: 370px;
+	background-color: red;
+}
+.fourthblue{
+	height: 126px;
+	background-color: blue;
+}
+.fourthblack{
+	height: 126px;
+	background-color: black;			
+}
+.fourthwhite{
+	height: 126px;
+	background-color: white;
+}
+.fifthblack{
+	height: 15px;
+	background-color: black;
+}
+.fifthblue{
+	height: 15px;
+	background-color: blue;
+}
+.fifthwhite{
+	height: 15px;
+	background-color: white;
+}
+.yellow{
+	height: 126px;
+	background-color: yellow;
+}
