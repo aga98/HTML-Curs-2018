@@ -5,7 +5,8 @@ html,body{
 }
 
 #header{
-	position: fixed;
+	position: sticky;
+	top: 0;
 	display: flex;
 	align-items: center;
 	width: 100%;
@@ -79,7 +80,7 @@ video{
 	display: flex;
 	flex: flex-end;
 	object-position: center;
-	overflow: hidden;
+	overflow:hidden;
 }
 
 #niagara{
@@ -191,12 +192,12 @@ span a{
 
 #bar {
 	position: sticky;
+	bottom: 0;
 	position: -webkit-sticky; /* Safari */
     list-style-type: none;
     margin: 0;
     padding: 0;
     height: 5vh;
-    overflow: hidden;
     background-color: #474747;
     display: flex;
     flex-direction: row;
@@ -254,6 +255,7 @@ span a{
 
 .photo-container:hover{
 	cursor: pointer;
+	transform: scale(1.02);
 }
 
 .photo-container img{
@@ -277,3 +279,5 @@ span a{
     color: white;
     border-radius: 0 0 7px 7px;
 }
+
+
