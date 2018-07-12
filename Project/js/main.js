@@ -5,7 +5,9 @@ $(document).ready(function(){
 	iid = setInterval(switchVideo,15000);
 	//automatic dark mode
 	var date = new Date();
-	var hours  = date.getHours();
+	var hours = date.getHours();
+	var year = date.getFullYear();
+	$("#credits span").html("&copy Copyright " + year + "  - Created by Alberto Giménez");
 	if(hours > 19 || hours < 8){ //dark
 		$("#night").prop("checked", true);
 		darken();
@@ -50,6 +52,7 @@ function darken(){
 	$(".header-country").css("color","white");
 	$("section div div").css("background-color","#404040");
 	$("footer").css("background-color","#404040");
+	$("#credits").css("background-color","#171a21");
 }
 
 function light(){
@@ -57,6 +60,7 @@ function light(){
 	$(".header-country").css("color","#545454");
 	$("section div div").css("background-color","#474747");
 	$("footer").css("background-color","#171a21");
+	$("#credits").css("background-color","#BBBBBB");
 }
 
 
