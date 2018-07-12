@@ -2,7 +2,13 @@ html,body{
 	margin: 0;
 	height: 100%;
 	width: 100%;
+	transition: background-color ease-in 0.7s;
 }
+
+*{
+	transition: color ease-in 0.7s;
+}
+
 
 #header{
 	position: sticky;
