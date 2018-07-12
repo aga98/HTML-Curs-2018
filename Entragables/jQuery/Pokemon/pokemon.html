@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pokemon</title>
+	<style>
+		table{
+			width: 100%;
+		}
+		table,th,tr,td{
+			border:1px solid black;
+			border-collapse: collapse;
+		}
+		#cont{
+			margin: 3px;
+			width: 100%;
+			height: 40px;
+			display: flex;
+			align-items:center;
+			justify-content: center;
+		}
+		input{
+			width: 200px;
+		}
+	</style>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Code</th>
+			<th>Normal Sprite</th>
+			<th>Shiny Sprite</th>
+			<th>Name</th>
+			<th>Type</th>
+			<th>HM</th>
+		</tr>
+		<tr>
+			<td id="code"></td>
+			<td id="normal_sprite"></td>
+			<td id="shiny_sprite"></td>
+			<td id="name"></td>
+			<td id="type"></td>
+			<td id="hm"></td>
+		</tr>
+	</table>
+	<div id="cont">
+		<button id="prev"><</button>
+		<input type="text" placeholder="Write a Pokemon code or name">
+		<button id="search">Search</button>
+		<button id="next">></button>
+	</div>
+</body>
+</html>
