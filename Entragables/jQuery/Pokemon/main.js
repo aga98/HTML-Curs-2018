@@ -54,9 +54,40 @@ function clear(){
 }
 
 function search(){
-	var web = "http://40.118.8.76/pokemons/"
-	var inp = $("#text").value;
-
-
-
+	var inp = $("#text").val();
+	if(inp == 1 || inp == "bulbasaur"){
+		$("#prev").prop("disabled", true);
+		$("#next").prop("disabled", false);
+	} 
+	else if(inp == 60 || inp == "polywag"){
+		$("#next").prop("disabled", true);
+		$("#prev").prop("disabled", false);
+	} 
+	var idnum;
+	var idname;
+	var existsnum = false;
+	var existsname = false;
+	$.get("http://40.118.8.76/pokemons/?num=" + inp,
+		function(pok){
+			if(pok.length != 0){
+				idnum = pok[0].id;
+				existsnum = true;
+				id = idnum;
+				getinfo();					
+			} 
+			else{
+				$.get("http://40.118.8.76/pokemons/?name=" + inp,
+					function(pok){
+						if(pok.length != 0){						
+							existsname = true;
+							idname = pok[0].id;
+						} 
+						if(existsname == true){
+							id = idname;
+							getinfo();
+						}
+						else alert("POKEMON NOT FOUND");
+	 			}, "json"); 	
+			}		
+	}, "json");
 }
