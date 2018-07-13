@@ -18,6 +18,9 @@ $().ready(function(){
 		--id;
 		getinfo();
 	});
+	$("#search").click(function(){
+		search();
+	});
 });
 
 
@@ -32,14 +35,12 @@ function getinfo(){
 			for(i = 0; i < data.types.length; i++){
 				x += data.types[i].type.name + "<br>";
 			}
-			document.getElementById("type").innerHTML = x;
-
+			$("#type").html(x);
 			for(j in data.moves.HM){
 				y += data.moves.HM[j] + "<br>";
 			}
-			if(y == "") document.getElementById("hm").innerHTML = "none";
-			else document.getElementById("hm").innerHTML = y;
-				
+			if(y == "") $("#hm").html("none");
+			else $("#hm").html(y);			
 	 	}, "json");
 }
 
@@ -50,5 +51,12 @@ function clear(){
 	$("#normal_sprite").text("");
 	$("#shiny_sprite").text("");
 	$("#name").text("");
-	document.getElementById("type").innerHTML = "";
-	document.getElementById("hm").innerHTML = "";}
+}
+
+function search(){
+	var web = "http://40.118.8.76/pokemons/"
+	var inp = $("#text").value;
+
+
+
+}
