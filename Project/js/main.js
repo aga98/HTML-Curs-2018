@@ -60,7 +60,7 @@ function light(){
 	$(".header-country").css("color","#545454");
 	$("section div div").css("background-color","#474747");
 	$("footer").css("background-color","#171a21");
-	$("#credits").css("background-color","#BBBBBB");
+	$("#credits").css("background-color","#787878");
 }
 
 
