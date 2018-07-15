@@ -56,6 +56,7 @@ function darken(){
 	$(".activ-desc").css("color", "white");
 	$(".myhr").css("border-top", "1px solid white");
 	$("p, h3").css("color", "white");
+	$(".place-cont").css("border", "1px solid white");
 }
 
 function light(){
@@ -67,4 +68,5 @@ function light(){
 	$(".activ-desc").css("color", "#545454");
 	$(".myhr").css("border-top", "1px solid #AEAEAE");
 	$("p, h3").css("color", "#575757");
+	$(".place-cont").css("border", "1px solid #787878");
 }

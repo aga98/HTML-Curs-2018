@@ -43,7 +43,6 @@
 	hr{
 		width: 100%;
 		margin: 2%;
-		color: white !important;
 	}
 }
 
@@ -55,7 +54,7 @@
 	font-family: 'Raleway', sans-serif;
 	border-radius: 30px;
 	border: 1px solid white;
-	flex-wrap: wrap;
+	padding: 10px;
 
 	.place-desc{
 		margin:  0 30px;
@@ -63,7 +62,8 @@
 	}
 	
 	.carousel{
-	border-radius: 15px;
+		border-radius: 15px;
+		align-self: center;
 	}
 }
 
