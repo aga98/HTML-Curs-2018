@@ -33,6 +33,7 @@ html,body{
 	font-size: 40px;
 	color: white;
 	padding-left: 17%;
+	transition: color 0s !important
 }
 #title:hover{
 	cursor: pointer;
@@ -238,7 +239,7 @@ span a{
 .country_title span{
 	font-family: 'Raleway', sans-serif;
 	color: #545454;
-	font-size: 25px;%;
+	font-size: 25px;
 }
 
 .country_title hr{

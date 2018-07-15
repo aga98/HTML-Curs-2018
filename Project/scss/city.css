@@ -1,0 +1,56 @@
+.carousel {
+  width: 640px;
+  height: 360px;
+  overflow: hidden; }
+
+.underheader {
+  width: 100%;
+  height: 70px;
+  background-color: #474747; }
+
+.flagcont {
+  height: 80px;
+  display: flex;
+  background: linear-gradient(to left, rgba(255, 0, 0, 0), #ff0000); }
+  .flagcont div img {
+    height: 80px; }
+  .flagcont span {
+    font-family: 'Raleway', sans-serif;
+    align-self: center;
+    line-height: 80px;
+    color: white;
+    font-size: 50px;
+    margin-left: 25px; }
+
+.activity {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .activity p {
+    font-family: 'Raleway', sans-serif;
+    color: #545454;
+    font-size: 25px;
+    min-width: 167px; }
+  .activity hr {
+    width: 100%;
+    margin: 2%;
+    color: white !important; }
+
+.place-cont {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 30px;
+  border: 1px solid white;
+  flex-wrap: wrap; }
+  .place-cont .place-desc {
+    margin: 0 30px;
+    max-width: 60%; }
+  .place-cont .carousel {
+    border-radius: 15px; }
+
+/*# sourceMappingURL=city.css.map */
