@@ -55,8 +55,9 @@ function darken(){
 	$("#credits").css("background-color","#171a21");
 	$(".activ-desc").css("color", "white");
 	$(".myhr").css("border-top", "1px solid white");
-	$("p, h3").css("color", "white");
+	$("place-cont p, place-cont h3").css("color", "white");
 	$(".place-cont").css("border", "1px solid white");
+	$("li").css("color","white");
 }
 
 function light(){
@@ -67,6 +68,8 @@ function light(){
 	$("#credits").css("background-color","#787878");
 	$(".activ-desc").css("color", "#545454");
 	$(".myhr").css("border-top", "1px solid #AEAEAE");
-	$("p, h3").css("color", "#575757");
+	$("place-cont p, place-cont h3").css("color", "#575757");
+	$("footer p").css("color", "white");
 	$(".place-cont").css("border", "1px solid #787878");
+	$("li").css("color","#545454");
 }
