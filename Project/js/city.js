@@ -28,6 +28,11 @@ $(document).ready(function(){
     	if(slide_place == 1) slide_place = places;
     	else --slide_place;
     	var p = "place" + slide_place.toString();
+    	if(places != 1){
+    		$("#" + p).animate({
+    			height: 'toggle'
+    		});
+    	}
     	$("#" + p).css("display","block");
     });
     $("#nextrest").click(function(){
@@ -47,7 +52,11 @@ $(document).ready(function(){
     	if(slide_place == 1) slide_rest = restaurants;
     	else --slide_rest;
     	var p = "rest" + slide_rest.toString();
+    	if(restaurants != 1){
+    		$("#" + p).animate({
+    			height: 'toggle'
+    		});
+    	}
     	$("#" + p).css("display","block");
     });
-
  });
