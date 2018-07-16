@@ -58,9 +58,27 @@
 	border: 1px solid white;
 	padding: 10px;
 
-	& > div{
+	.place-desc{
 		margin:  0 30px;
 		max-width: 60%;
+		& > div{
+			display: none;
+		}
+		& > #first-place{
+			display: block;
+		}
+
+	}
+
+	.rest-desc{
+		margin:  0 30px;
+		max-width: 60%;
+		& > div{
+			display: none;
+		}
+		& > #first-place{
+			display: block;
+		}
 
 	}
 	

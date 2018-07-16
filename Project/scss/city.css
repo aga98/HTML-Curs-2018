@@ -48,9 +48,20 @@
   border-radius: 30px;
   border: 1px solid white;
   padding: 10px; }
-  .place-cont > div {
+  .place-cont .place-desc {
     margin: 0 30px;
     max-width: 60%; }
+    .place-cont .place-desc > div {
+      display: none; }
+    .place-cont .place-desc > #first-place {
+      display: block; }
+  .place-cont .rest-desc {
+    margin: 0 30px;
+    max-width: 60%; }
+    .place-cont .rest-desc > div {
+      display: none; }
+    .place-cont .rest-desc > #first-place {
+      display: block; }
   .place-cont .carousel {
     border-radius: 15px; }
 
