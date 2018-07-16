@@ -34,6 +34,8 @@
     color: #545454;
     font-size: 25px;
     min-width: 190px; }
+  .activity .maptitle {
+    min-width: 49px; }
   .activity hr {
     width: 100%;
     margin: 2%; }
@@ -64,6 +66,8 @@
       display: block; }
   .place-cont .carousel {
     border-radius: 15px; }
+    .place-cont .carousel ol li {
+      pointer-events: none; }
 
 .list {
   text-decoration: none; }
@@ -119,3 +123,8 @@
   direction: ltr;
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased; }
+
+#map {
+  width: 100%;
+  height: 700px;
+  z-index: 0; }
